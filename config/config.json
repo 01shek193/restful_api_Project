@@ -24,7 +24,7 @@
     "username": "kevapi",
     "password": "HXhOoxN4VqfyAdJRaPuULZpKSATHzCMd",
     "database": "db_api_rest_b8cn",
-    "host": "postgres://kevapi:HXhOoxN4VqfyAdJRaPuULZpKSATHzCMd@dpg-ck5k4hddrqvc73ec5m5g-a.oregon-postgres.render.com",
+    "host": "oregon-postgres.render.com",
     "dialect": "postgres",
     "dialectOptions": {
       "ssl":{
