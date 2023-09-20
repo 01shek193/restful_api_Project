@@ -19,7 +19,7 @@ const getArticle = async(req,res) => {
 const createArticle = async (req,res) => {
     const {body} = req;
     try {
-        const createArticle = await Articleservice.createArticle(body.title,body.content,body.UserId);
+        const createArticle = await Articleservice.createArticle(body.title,body.content,body.UserId,body.ArticleId);
         res.status(200).send({status: "OK",data: createArticle});
     } catch (error) {
         res.status(error.status || 500).send({status: 'FAILED', data:{error: error.message}});

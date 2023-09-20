@@ -26,12 +26,13 @@ const getArticle = async (id) => {
         throw {status:500, message: error.message || 'Failed to get Article'}
     }
 }
-const createArticle = async (title , content, UserId) =>{
+const createArticle = async (title , content, UserId, ArticleId) =>{
     try {
         let newArticle = await  db.Article.create({
             title,
             content,
-            UserId
+            UserId,
+            ArticleId
         });
         if (newArticle) {
             const categories = [1,2,3]
